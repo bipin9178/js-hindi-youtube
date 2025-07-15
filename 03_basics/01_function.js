@@ -35,7 +35,26 @@ function loginUserMessage(username= "sam")
 }
 
 //console.log(loginUserMessage("bipin"));
-console.log(loginUserMessage("Hitesh"));
+//console.log(loginUserMessage("Hitesh"));
+
+function  cardPrice(val1,val2,...num1)
+{
+    return num1
+
+}
+// console.log(cardPrice(200,300,400,2000));
+
+const user=
+{
+    username:"bipin",
+    price:"199"
+}
+
+function handelObject (AnyObject){
+    console.log(`username is ${AnyObject.username} and price is ${AnyObject.price}`);
+    
+}
+handelObject(user)
 
 
  
