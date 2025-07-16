@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom </title>
+</head>
+<body style="background-color: #212121; color:#fff" >
+    <ul class="languages">
+        <li class="lang">JavaScript</li>>
+
+    </ul>
+</body>
+<script>
+    function addLanguage(langName)
+    {
+const li= document.createElement('li');
+li.innerHTML= `${langName}`
+document.querySelector('.languages').
+appendChild(li)
+
+
+    }
+    addLanguage("Python");
+    addLanguage("Java");
+
+    function addoptiLanguage(langName)
+    {
+        const li= document.createElement('li');
+
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.languages').append(li)
+
+    }
+    addoptiLanguage("golang"
+    )
+
+    //Edit
+
+   const SecondLang= document.querySelector("li:nth-child(2)")
+   console.log(SecondLang);
+
+   //SecondLang.innerHTML= "MoJo";
+    const newli = documnet.createElement('li');
+    newli.innerHTML= "MoJo";
+    SecondLang.replaceWith(newli)
+
+
+// edit
+
+const firstLang= document.querySelector("li:first-child")
+firstLang.outerHTML= "JavaScript is the best language"
+
+// remove
+
+const lastLang= document.querySelector("li:last-child")
+lastLang.remove()
+
+</script>
+</html>
