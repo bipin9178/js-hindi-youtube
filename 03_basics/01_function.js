@@ -56,5 +56,12 @@ function handelObject (AnyObject){
 }
 handelObject(user)
 
+const myarry= [100,200,300,400];
+ 
+function returnSecondValue(getArry)
+{
+    return getArry[1];
+}
+console.log(returnSecondValue([200,100,400,1000]));
 
  
