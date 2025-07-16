@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Html </title>
+</head>
+<body style="background-color: lightblue; color: black; font-size: 20px;">
+    <div class="prents">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wenesday</div>
+        <div class="day">Thursday</div>
+    </div>
+    <script >
+        const div =document.createElement('div');
+        console.log(div);
+        div.className = "main";
+        div.id = Math.round(Math.random() * 10+1)
+        div.setAttribute("title", "Generated Title")
+        div.style.backgroundColor ="green"
+        div.style.padding ="12px"
+        div.innerText="chai aur code"
+       const addtext= document.createTextNode("chai our code ")
+        div.appendchild(addtext)
+
+        document.body.appendChild(div)
+
+        
+
+
+
+    </script>
+</body>
+</html>
